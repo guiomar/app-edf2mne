@@ -19,13 +19,13 @@ with open(__location__+'/config.json') as config_json:
     config = json.load(config_json)
 
 
-fname = config['bdf']
+fname = config['edf']
 
 
 # COPY THE METADATA CHANNELS.TSV, COORDSYSTEM, ETC ==============================
 
 
-raw = mne.io.read_raw_bdf(fname)
+raw = mne.io.read_raw_edf(fname)
 
 # save mne/raw
 raw.save(os.path.join('out_dir','raw.fif'))
