@@ -1,7 +1,7 @@
 # app-edf2mne
 
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.469-blue.svg)](https://doi.org/10.25663/brainlife.app.469)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.637-blue.svg)](https://doi.org/10.25663/brainlife.app.637)
 
 ## Documentation
 Converts EEG `edf` files to MNE raw data, using `mne.io.read_raw_edf` function from MNE-python.
