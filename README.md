@@ -1,5 +1,37 @@
 # app-edf2mne
 
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+> **Converts an EEG recording in EDF format to MNE-Python Raw (.fif) with mne.io.read_raw_edf.**
+
+Utility that reads the EDF file of an EEG dataset with MNE-Python and saves it as raw.fif so it can be used by brainlife MNE Apps. Only the EDF data file is converted; the BIDS channels, electrodes, coordinate system and events sidecars of the input are not applied.
+
+| | |
+|---|---|
+| 📥 **Inputs** | `neuro/eeg/edf` |
+| 📤 **Outputs** | `neuro/meeg/mne/raw` |
+| 🐳 **Container** | `brainlife/mne:0.23dev` |
+| ⚙️ **Resources** | 8 CPUs |
+| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.637](https://doi.org/10.25663/brainlife.app.637) |
+
+#### 📥 Inputs
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `edf1` | `neuro/eeg/edf` | yes | EEG recording in EDF format with optional BIDS sidecars (channels, electrodes, coordsystem, events). |
+
+#### 📤 Outputs
+
+| Output | Datatype | Description |
+|---|---|---|
+| `out_dir` | `neuro/meeg/mne/raw` | MNE Raw data in FIF format |
+
+📚 **References used by this App:**
+- Hayashi S., Caron B. A. et al. brainlife.io: A decentralized and open source cloud platform to support neuroscience research. arXiv (2023).
+- Gramfort A. et al. MEG and EEG data analysis with MNE-Python. Frontiers in Neuroscience 7:267 (2013). [doi:10.3389/fnins.2013.00267](https://doi.org/10.3389/fnins.2013.00267)
+
+<!-- brainlife-app:end -->
+
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.637-blue.svg)](https://doi.org/10.25663/brainlife.app.637)
 
